@@ -7,8 +7,8 @@ p,.search,.room,.toolbar button,.flowbar button,.flowbar select,table{font-size:
 .viewer.immersive,.viewer:fullscreen{position:fixed;inset:0;width:100vw;height:100dvh;min-height:0;border:0;border-radius:0;z-index:1000;background:#eaf0ed}
 body.has-immersive{overflow:hidden}
 .fullscreen-bar{position:absolute;right:16px;top:16px;z-index:12;display:flex;gap:8px}
-.fullscreen-bar button{background:#173f3e;color:white;border-color:#173f3e;font-size:14px;box-shadow:0 3px 15px #173f3e22}
-.fullscreen-panel{position:absolute;right:16px;top:68px;z-index:11;width:310px;max-height:calc(100dvh - 135px);overflow:auto;padding:16px;background:#fffffff5;border:1px solid #c6d5cd;border-radius:12px;box-shadow:0 10px 30px #16382b26}
+.fullscreen-bar button{background:#173f3e;color:white;border-color:#173f3e;font-size:14px;box-shadow:0 3px 15px #00000018}
+.fullscreen-panel{position:absolute;right:16px;top:68px;z-index:11;width:310px;max-height:calc(100dvh - 135px);overflow:auto;padding:16px;background:#fffffff5;border:1px solid #c6d5cd;border-radius:12px;box-shadow:0 10px 30px #00000020}
 .fullscreen-panel .toolbar,.fullscreen-panel .flowbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;align-items:stretch}
 .fullscreen-panel .toolbar .seg{width:100%;margin:0}.fullscreen-panel .toolbar button{flex:1;white-space:nowrap}
 .fullscreen-panel select{width:100%;font-size:14px;margin-bottom:10px}
