@@ -3,3 +3,18 @@
 
 /* Readability: UI text keeps sufficient size and contrast. */
 p,.search,.room,.toolbar button,.flowbar button,.flowbar select,table{font-size:14px;color:#344e47}.eyebrow,.badge,.download,.filters button,.sidefoot,.view-note,.legend,.sequence,footer,th,.room .code,.room em,.stats span{font-size:12px;color:#3d584e}.brand small{font-size:11px}.room.active{color:white}.stats span{line-height:1.5}.room-list{max-height:520px}.view-note{max-width:calc(100% - 32px)}.room{align-items:center}.flowbar button.active{color:#fff}.toolbar button.active{color:#fff}.filters button.active{color:#fff}@media(max-width:650px){.view-note,.legend,table{font-size:12px}.flowbar{align-items:stretch}}
+/* Immersive consultation: floating controls stay within the fullscreen element. */
+.viewer.immersive,.viewer:fullscreen{position:fixed;inset:0;width:100vw;height:100dvh;min-height:0;border:0;border-radius:0;z-index:1000;background:#eaf0ed}
+body.has-immersive{overflow:hidden}
+.fullscreen-bar{position:absolute;right:16px;top:16px;z-index:12;display:flex;gap:8px}
+.fullscreen-bar button{background:#173f3e;color:white;border-color:#173f3e;font-size:14px;box-shadow:0 3px 15px #173f3e22}
+.fullscreen-panel{position:absolute;right:16px;top:68px;z-index:11;width:310px;max-height:calc(100dvh - 135px);overflow:auto;padding:16px;background:#fffffff5;border:1px solid #c6d5cd;border-radius:12px;box-shadow:0 10px 30px #16382b26}
+.fullscreen-panel .toolbar,.fullscreen-panel .flowbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;align-items:stretch}
+.fullscreen-panel .toolbar .seg{width:100%;margin:0}.fullscreen-panel .toolbar button{flex:1;white-space:nowrap}
+.fullscreen-panel select{width:100%;font-size:14px;margin-bottom:10px}
+.fullscreen-panel .flowbar>div{width:100%;margin:0}.fullscreen-panel .flowbar button{font-size:13px;flex:1}
+.fullscreen-zoom{display:flex;gap:8px;margin:0 0 16px}.fullscreen-zoom button{flex:1;font-size:14px}
+.fullscreen-info summary{cursor:pointer;font-size:14px;font-weight:700;padding:12px 0;border-top:1px solid #cedbd3;color:#22463b}
+.fullscreen-info article{border:0;padding:0}.fullscreen-info h2{font-size:20px}.fullscreen-info td,.fullscreen-info th{padding:6px 3px;font-size:12px}.fullscreen-info table{table-layout:fixed}.fullscreen-info th:first-child{width:44px}.fullscreen-info td:last-child{white-space:normal;width:70px}
+.viewer.immersive .view-note{max-width:calc(100% - 370px)}
+@media(max-width:650px){.fullscreen-bar{top:10px;right:10px;left:10px;justify-content:flex-end}.fullscreen-bar button{font-size:13px;padding:10px}.fullscreen-panel{top:62px;right:10px;width:min(310px,calc(100vw - 20px));max-height:calc(100dvh - 125px)}.viewer.immersive .view-note{display:none}.viewer.immersive .legend{font-size:12px}}
